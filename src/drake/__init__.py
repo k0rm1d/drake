@@ -4170,6 +4170,7 @@ class ArchiveExtractor(Builder):
   def __init__(self, tarball, targets = [],
                patches = None, patch_dir = drake.Path('.')):
     """ Constructor
+        @param targets: list of paths (not nodes)
         @param patches: list of (patch_node, strip_level)
     """
     self.__tarball = tarball
